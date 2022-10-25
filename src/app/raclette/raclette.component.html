@@ -1,4 +1,4 @@
-<p>raclette works!</p>
+<h1 appHighlight>raclette works!</h1>
 
 <ul>
     <li>Pommes de terre</li>
@@ -13,7 +13,7 @@
 <!-- ngIf le * sucre syntaxique pas visible dans console -->
 <!-- structure directive -->
 <!-- La pour la liste complète mais possible dans le li -->
-<ul *ngIf="isGuestListDisplayed">
+<ul *appDisplayGuests="isGuestListDisplayed">
     <li>Brenda</li>
     <li>Dylan</li>
     <li>Michel Drucker</li>
