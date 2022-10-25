@@ -8,6 +8,8 @@ import { UserProfilComponent } from './user-profil/user-profil.component';
 import { RacletteComponent } from './raclette/raclette.component';
 import { HighlightDirective } from './highlight.directive';
 import { DisplayGuestsDirective } from './display-guests.directive';
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { DisplayMovieDirective } from './display-movie.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DisplayGuestsDirective } from './display-guests.directive';
     UserProfilComponent,
     RacletteComponent,
     HighlightDirective,
-    DisplayGuestsDirective
+    DisplayGuestsDirective,
+    MovieListComponent,
+    DisplayMovieDirective
   ],
   imports: [
     BrowserModule,
