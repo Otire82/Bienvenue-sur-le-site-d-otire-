@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MyComponentComponent } from './my-component/my-component.component';
 import { UserProfilComponent } from './user-profil/user-profil.component';
+import { RacletteComponent } from './raclette/raclette.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
-    UserProfilComponent
+    UserProfilComponent,
+    RacletteComponent
   ],
   imports: [
     BrowserModule,

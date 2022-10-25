@@ -1,0 +1,29 @@
+<p>raclette works!</p>
+
+<ul>
+    <li>Pommes de terre</li>
+    <!-- attribut directive ngStyle avec forme d'opérateur ternaire -->
+    <li [ngStyle]="{backgroundColor:isThisIngredientVital ? 'red' : 'yellow'}">Raclette</li>
+    <li>Jambon</li>
+    <!-- attribut directive ngClass -->
+    <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
+    <li>Chou-fleur</li>
+</ul>
+
+<!-- ngIf le * sucre syntaxique pas visible dans console -->
+<!-- structure directive -->
+<!-- La pour la liste complète mais possible dans le li -->
+<ul *ngIf="isGuestListDisplayed">
+    <li>Brenda</li>
+    <li>Dylan</li>
+    <li>Michel Drucker</li>
+    <li>Marc Aurèle</li>
+    <li>Julie</li>
+</ul>
+
+<!-- ngFor structure directive, liste d'élément a afficher en boucle -->
+<ul>
+    <li *ngFor="let song of songList">
+        {{song}}
+    </li>
+</ul>
