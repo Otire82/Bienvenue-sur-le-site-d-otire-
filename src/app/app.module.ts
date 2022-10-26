@@ -32,6 +32,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   ],
   imports: [
     BrowserModule,
+    // utile pour le formulaire
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
