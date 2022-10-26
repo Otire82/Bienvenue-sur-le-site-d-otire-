@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.route';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { ChildComponent } from './child/child.component';
+import { KitchenComponent } from './kitchen/kitchen.component';
+import { MagicOvenComponent } from './magic-oven/magic-oven.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     DisplayMovieDirective,
     HomeComponent,
     ContactComponent,
-    SignUpComponent
+    SignUpComponent,
+    ChildComponent,
+    KitchenComponent,
+    MagicOvenComponent
   ],
   imports: [
     BrowserModule,

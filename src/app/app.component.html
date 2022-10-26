@@ -11,6 +11,9 @@
   <li>
     <a [routerLink]="['/sign-up']">SIGN UP</a>
   </li>
+  <li>
+    <a [routerLink]="['/kitchen']">KITCHEN</a>
+  </li>
 </ul>
 
 <router-outlet></router-outlet>
@@ -27,3 +30,4 @@
 <div>
     <app-movie-list></app-movie-list>
 </div> -->
+<app-child [myInputData]=" 'chaine transmise via @Input' "></app-child>
