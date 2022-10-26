@@ -14,6 +14,7 @@ import { DisplayMovieDirective } from './display-movie.directive';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.route';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ROUTES } from './app.route';
     MovieListComponent,
     DisplayMovieDirective,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
