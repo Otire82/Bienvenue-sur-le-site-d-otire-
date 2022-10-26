@@ -28,6 +28,7 @@
 </div>
 
 <app-magic-oven
+  (cookies)="onGetCookies($event)"
   [startCooking]="isCooked"
   [numberOfCookies]="numberOfCookies"
   [flour]="flourQuantity"

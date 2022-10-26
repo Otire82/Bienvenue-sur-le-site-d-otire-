@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-magic-oven',
@@ -26,9 +26,14 @@ sugar: number = 0;
 egg: number = 0;
 
 
+  @Output()
+  cookies: EventEmitter<number> = new EventEmitter(); 
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  sendCookies() {
+    this.cookies.emit(this.numberOfCookies);
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -11,6 +11,13 @@ export class ChildComponent implements OnInit {
   // on décore notre propriété avec @Input()
   @Input() myInputData: string = "";
 
+//   // @Output en plus du @Input, il faut que celui ci soit typé avec EventEmitter
+//   @Output()
+// dataChange: EventEmitter<string> = new EventEmitter();
+
+// sendDataToParent(): void {
+//   this.dataChange.emit('Chaîne de caractères envoyée au parent');
+// }
   constructor() { }
 
   ngOnInit(): void {

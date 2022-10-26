@@ -15,7 +15,13 @@
     <a [routerLink]="['/kitchen']">KITCHEN</a>
   </li>
   <li>
+    <a [routerLink]="['/magic-oven']">MAGIC-OVEN</a>
+  </li>
+  <li>
     <a [routerLink]="['/developer']">DEVELOPER</a>
+  </li>
+  <li>
+    <a [routerLink]="['/create-onomatopia']">ONOMATOPIA</a>
   </li>
 </ul>
 
@@ -34,5 +40,9 @@
     <app-movie-list></app-movie-list>
 </div> -->
 
+<div *ngFor="let res of onomatopoeiaList">
+    <p>{{res}}</p>
+</div>
+<app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
 
-<!-- <app-child [myInputData]=" 'chaine transmise via @Input' "></app-child> -->
+<app-child [myInputData]=" 'chaine transmise via @Input' "></app-child>
