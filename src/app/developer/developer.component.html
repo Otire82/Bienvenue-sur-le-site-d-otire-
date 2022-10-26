@@ -1,0 +1,23 @@
+<p>developer works!</p>
+
+<div *ngFor="let develop of developer">
+    <div>
+        <p>firstname:</p>
+        <p>{{develop.firstName}}</p>
+    </div>
+    <div>
+        <p>lastName:</p>
+        <p>{{develop.lastName}}</p>
+    </div>
+    <div>
+        <p>age:</p>
+        <p>{{develop.age}}</p>
+    </div>
+    <div>
+        <p>bio:</p>
+        <p>{{develop.bio}}</p>
+    </div>
+    <div>
+        <app-skill [name] = 'name' [logo] = 'logo' [site] = 'site'></app-skill>
+    </div>
+</div>

@@ -18,6 +18,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ChildComponent } from './child/child.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { MagicOvenComponent } from './magic-oven/magic-oven.component';
+import { SkillComponent } from './skill/skill.component';
+import { DeveloperComponent } from './developer/developer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { MagicOvenComponent } from './magic-oven/magic-oven.component';
     SignUpComponent,
     ChildComponent,
     KitchenComponent,
-    MagicOvenComponent
+    MagicOvenComponent,
+    SkillComponent,
+    DeveloperComponent
   ],
   imports: [
     BrowserModule,
